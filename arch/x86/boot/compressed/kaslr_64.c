@@ -30,7 +30,6 @@
 #include "../../mm/ident_map.c"
 
 /* Used by pgtable.h asm code to force instruction serialization. */
-unsigned long __force_order;
 
 /* Used to track our page table allocation area. */
 struct alloc_pgt_data {

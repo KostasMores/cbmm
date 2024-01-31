@@ -356,4 +356,5 @@ static inline void *offset_to_ptr(const int *off)
 /* &a[0] degrades to a pointer: a different type from an array */
 #define __must_be_array(a)	BUILD_BUG_ON_ZERO(__same_type((a), &(a)[0]))
 
+#define prevent_tail_call_optimization()	mb()
 #endif /* __LINUX_COMPILER_H */

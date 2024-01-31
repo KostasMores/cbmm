@@ -850,9 +850,11 @@ __SYSCALL(__NR_pidfd_open, sys_pidfd_open)
 #define __NR_clone3 435
 __SYSCALL(__NR_clone3, sys_clone3)
 #endif
+#define __NR_init_badger_trap 440
+__SYSCALL(__NR_init_badger_trap, sys_init_badger_trap)
 
 #undef __NR_syscalls
-#define __NR_syscalls 436
+#define __NR_syscalls 441
 
 /*
  * 32 bit systems traditionally used different
